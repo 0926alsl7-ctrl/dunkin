@@ -1,0 +1,675 @@
+@import url("https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Chiron+Hei+HK:ital,wght@0,200..900;1,200..900&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Chiron+GoRound+TC:wght@200..900&family=Chiron+Hei+HK:ital,wght@0,200..900;1,200..900&family=Titan+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Titan One", sans-serif;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+}
+body {
+  background: url(/던킨이미지/top-bg-63cd294e.png);
+  height: 100%;
+}
+header {
+  position: fixed;
+  z-index: 15;
+  width: 100%;
+  height: 76px;
+  background: url(/던킨이미지/header_bg-63efc11c.png);
+}
+header ul {
+  z-index: 14;
+  width: 100%;
+  height: 76px;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  position: relative;
+}
+header::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(
+    to top,
+    rgba(87, 32, 0, 0.4),
+    rgba(87, 32, 0, 0.3),
+    rgb(87, 32, 0, 0.2),
+    rgb(87, 32, 0, 0.1),
+    rgba(87, 32, 0, 0.05),
+    rgba(87, 32, 0, 0)
+  );
+  z-index: 5;
+}
+header li {
+  font-size: 18px;
+  width: 10%;
+}
+header ul a {
+  display: block;
+}
+header .bg {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* width: 2040px; */
+  width: 100%;
+  height: 0;
+  display: flex;
+  position: absolute;
+  top: 77px;
+  left: 0;
+  z-index: 4;
+  transition: all 0.4s;
+}
+.bg .inner {
+  font-size: 16px;
+  width: 100%;
+  position: absolute;
+  top: 77px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+header ul li a:hover {
+  color: rgb(196, 0, 108);
+}
+header ul li:nth-child(4) a:first-child:hover {
+  color: white;
+}
+
+header li:nth-child(2):hover .bg {
+  height: 80px;
+}
+header li:nth-child(2):hover .inner:first-child {
+  height: 80px;
+}
+header li:nth-child(3):hover .bg {
+  height: 80px;
+}
+header li:nth-child(3):hover .inner:first-child {
+  height: 80px;
+}
+header li:nth-child(5):hover .bg {
+  height: 80px;
+}
+header li:nth-child(5):hover .inner:first-child {
+  height: 80px;
+}
+header li:nth-child(7):hover .bg {
+  height: 80px;
+}
+header li:nth-child(7):hover .inner:first-child {
+  height: 80px;
+}
+header li:nth-child(2) .inner:first-child {
+  width: 240px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 23%;
+  transform: translate(-23%, 0);
+}
+header li:nth-child(3) .inner:first-child {
+  width: 540px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 43%;
+  transform: translate(-43%, 0);
+}
+header li:nth-child(5) .inner:first-child {
+  width: 220px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 63%;
+  font-weight: 900;
+  transform: translate(-63%, 0);
+}
+header li:nth-child(7) .inner:first-child {
+  width: 300px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 85%;
+  font-weight: 900;
+  transform: translate(-85%, 0);
+}
+
+header li:nth-child(4) {
+  z-index: 20;
+  position: relative;
+  width: 23%;
+  font-size: 2.5vw;
+  align-content: center;
+  background-color: rgb(255, 117, 25);
+  border-radius: 30px 30px 8px 8px;
+  height: 80px;
+  transform: translateY(10px);
+  text-shadow: 1px 1px 10px rgb(160, 59, 0);
+}
+header li:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  border-radius: 0px 0px 8px 9px;
+  background: linear-gradient(
+    to top,
+    rgb(197, 79, 0),
+    rgb(212, 85, 0),
+    rgb(233, 93, 0),
+    rgb(255, 106, 7),
+    rgb(255, 117, 25),
+    rgb(255, 117, 25)
+  );
+}
+header li:nth-child(4) a {
+  color: white;
+}
+header li:nth-child(1) {
+  width: 17%;
+}
+main {
+  transform: translateY(124px);
+  width: 90%;
+  max-width: 1800px;
+  height: 40vw;
+  margin: auto;
+  position: relative;
+}
+
+main .box {
+  width: 98%;
+  height: 100%;
+  border-radius: 90px;
+  background: url(/던킨이미지/main1.jpg) center/cover no-repeat;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+}
+main .mainfo {
+  height: 85%;
+  position: absolute;
+  right: 5%;
+  top: 6%;
+  width: 24%;
+}
+.mainfo ul {
+  width: 100%;
+  height: 100%;
+}
+.mainfo li:nth-child(1) {
+  border-radius: 32px 50px 32px 32px;
+  position: relative;
+  width: 100%;
+  height: 64%;
+  background-color: rgb(220, 246, 255);
+}
+.mainfo li:nth-child(1) p {
+  width: 100%;
+  text-align: center;
+  color: rgb(106, 200, 255);
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  line-height: 28px;
+  font-size: 18px;
+}
+.mainfo span {
+  color: rgb(255, 143, 205);
+  font-weight: bold;
+  font-size: 22px;
+}
+.mainfo li:nth-child(2) h3 {
+  color: white;
+  position: absolute;
+  top: 32%;
+  left: 12%;
+  transform: translate(-12%, -32%);
+  font-weight: 900;
+  font-size: 22px;
+}
+.mainfo li:nth-child(1) img {
+  width: 80%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+.mainfo li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  height: 8px;
+  width: 20px;
+  border-radius: 50px;
+  background-color: rgb(255, 143, 205);
+}
+.mainfo li:nth-child(2) img {
+  width: 140px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translate(-2%, -50%);
+}
+.mainfo li:nth-child(2) {
+  position: relative;
+  border-radius: 34px;
+  margin-top: 8px;
+  width: 100%;
+  height: 26.5%;
+  background-color: rgb(255, 208, 215);
+}
+.mainfo li:nth-child(3) {
+  border-radius: 50px;
+  margin-top: 8px;
+  width: 100%;
+  height: 9.5%;
+  background-color: rgb(202, 51, 101);
+  text-align: center;
+  align-content: center;
+  font-size: 24px;
+  color: white;
+}
+figure {
+  margin-top: 180px;
+  width: 100%;
+  max-width: 2100px;
+  height: 40vw;
+  max-height: 600px;
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #ffffff,
+    #ffffffe3,
+    #ffffffe3,
+    #ffffffd0,
+    #ffffffd0,
+    #ffffffb2,
+    #ffffffb2,
+    #ffffff85,
+    #ffffff85,
+    #ffffff5e,
+    #ffffff8e,
+    #ffffff5e,
+    #ffffff3b,
+    #ffffff31,
+    #ffffff09,
+    #ffffff00
+  );
+}
+figure h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: rgb(255, 106, 7);
+  padding-top: 60px;
+}
+figure p {
+  color: #333;
+  font-size: 18px;
+  line-height: 44px;
+  padding-bottom: 30px;
+}
+figure .slide {
+  width: calc(100% - 40%);
+  height: 70%;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+.slide::before {
+  content: "";
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 26px;
+  background: linear-gradient(
+    to right,
+    #fff,
+    #ffffffc9,
+    #ffffff3f,
+    #ffffff3b,
+    #ffffff09
+  );
+  z-index: 4;
+}
+.slide::after {
+  content: "";
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  right: -1px;
+  top: 0;
+  border-radius: 24px;
+  background: linear-gradient(
+    to left,
+    #fff,
+    #ffffffc9,
+    #ffffff3f,
+    #ffffff3b,
+    #ffffff09
+  );
+  z-index: 4;
+}
+
+.slide a {
+  border-radius: 26px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.6s;
+}
+.slide a:nth-child(1) {
+  background: url(/던킨이미지/slide1.jpg) center/cover no-repeat;
+}
+.slide a:nth-child(2) {
+  background: url(/던킨이미지/slide2.jpg) center/cover no-repeat;
+  right: -100%;
+}
+.slide a:nth-child(3) {
+  background: url(/던킨이미지/slide3.jpg) center/cover no-repeat;
+  right: -100%;
+}
+.slide a:nth-child(4) {
+  background: url(/던킨이미지/slide4.jpg) center/cover no-repeat;
+  right: -100%;
+}
+.slide a:nth-child(5) {
+  background: url(/던킨이미지/slide5.jpg) center/cover no-repeat;
+  right: -100%;
+}
+.slide a:nth-child(6) {
+  background: url(/던킨이미지/slide6.jpg) center/cover no-repeat;
+  right: -100%;
+}
+.slide a:nth-child(7) {
+  background: url(/던킨이미지/slide7.jpg) center/cover no-repeat;
+  right: -100%;
+}
+.slide a:nth-child(8) {
+  background: url(/던킨이미지/slide8.jpg) center/cover no-repeat;
+  right: -100%;
+}
+.slide a:nth-child(9) {
+  background: url(/던킨이미지/slide10.jpg) center/cover no-repeat;
+  right: -100%;
+}
+section {
+  margin-top: 180px;
+  width: 100%;
+  max-width: 2100px;
+  height: 40vw;
+  max-height: 600px;
+  text-align: center;
+  background-color: white;
+}
+section h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: rgb(255, 106, 7);
+  padding-top: 60px;
+}
+section span {
+  color: #333;
+  font-size: 18px;
+  line-height: 44px;
+}
+section ul {
+  width: 90%;
+  height: 48%;
+  margin: auto;
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+section li {
+  border: 1px solid transparent;
+  /* width: 15%; */
+  height: 100%;
+  margin-left: 26px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px gainsboro;
+  background-color: whitesmoke;
+  overflow: hidden;
+}
+section p {
+  width: 100%;
+  height: 10%;
+  font-size: 20px;
+  padding-top: 16px;
+}
+section .scale {
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+section img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+section li:nth-child(1) .scale {
+  background-color: bisque;
+}
+section li:nth-child(1) img:hover {
+  transform: scale(110%);
+}
+section li:nth-child(2) img:hover {
+  transform: scale(110%);
+}
+section li:nth-child(3) img:hover {
+  transform: scale(110%);
+}
+section li:nth-child(4) img:hover {
+  transform: scale(110%);
+}
+section li:nth-child(5) img:hover {
+  transform: scale(110%);
+}
+
+section li:nth-child(2) .scale {
+  background-color: rgb(255, 246, 194);
+}
+section li:nth-child(3) .scale {
+  background-color: rgb(255, 216, 222);
+}
+section li:nth-child(4) .scale {
+  background-color: rgb(223, 243, 255);
+}
+section li:nth-child(5) .scale {
+  background-color: rgb(228, 255, 230);
+}
+article {
+  margin-top: 180px;
+  width: 90%;
+  max-width: 2100px;
+  height: 40vw;
+  margin: auto;
+  max-height: 680px;
+  text-align: center;
+}
+article h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: rgb(255, 106, 7);
+  padding-top: 60px;
+}
+article span {
+  color: #333;
+  font-size: 18px;
+  line-height: 44px;
+}
+article ul {
+  width: 100%;
+  height: 64%;
+  margin: auto;
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+article li {
+  width: 20%;
+  border: 1px solid transparent;
+  height: 100%;
+  margin-left: 26px;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgb(167, 167, 167);
+  background-color: white;
+}
+article .caption {
+  width: 100%;
+  height: 25%;
+  line-height: 32px;
+  align-content: center;
+}
+
+article li h3 {
+  font-size: 32px;
+  color: #333;
+  font-weight: 400;
+}
+article .img {
+  width: 95%;
+  height: 75%;
+  margin-top: 8px;
+  margin-left: 8px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+article img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+article li:nth-child(1) .img:hover img {
+  transform: scale(110%);
+}
+article li:nth-child(2) .img:hover img {
+  transform: scale(110%);
+}
+article li:nth-child(3) .img:hover img {
+  transform: scale(110%);
+}
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 2100px;
+  height: 300px;
+  background-color: white;
+}
+
+footer .wrap {
+  margin: auto;
+  width: 85%;
+  height: 220px;
+  display: flex;
+}
+.wrap .left {
+  width: 40%;
+}
+.left .logo {
+  margin-top: 36px;
+}
+.left .copy {
+  margin-top: 20px;
+  width: 70%;
+}
+.copy p {
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Chiron GoRound TC", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+}
+.left .login {
+  margin-top: 10px;
+}
+.left .login a {
+  margin-right: 30px;
+  font-family: "Chiron GoRound TC", sans-serif;
+  font-size: 14px;
+}
+.login a:first-child {
+  color: rgb(255, 117, 25);
+  font-weight: bold;
+}
+.wrap .right {
+  width: 60%;
+  position: relative;
+}
+.right ul {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-size: 12px;
+}
+.right li {
+  width: 20%;
+  text-align: right;
+}
+.right li a:first-child {
+  color: gray;
+}
+.right div {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.right div a {
+  color: #333 !important;
+  line-height: 20px;
+  display: block;
+  font-family: "Chiron GoRound TC", sans-serif;
+}
+.right .sns2 {
+  width: 30%;
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+footer .fam {
+  margin: auto;
+  width: 85%;
+  height: 80px;
+  background-color: yellow;
+}
