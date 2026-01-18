@@ -9,219 +9,336 @@
     <link rel="icon" sizes="96x96" href="images/favicon_96x96.png">
     <link rel="icon" sizes="32x32" href="images/favicon_32x32.png">
     <link rel="icon" sizes="16x16" href="images/favicon_16x16.png">
+    <link rel="stylesheet" href="fonts/web/static/pretendard.css">
+    <link rel="stylesheet" href="fonts/web/static/pretendard-subset.css">
+    <link rel="stylesheet" href="fonts/web/variable/pretendardvariable.css">
     <link rel="stylesheet" href="style.css" />
     <script src="/jquery-1.12.3.js"></script>
     <script src="index.js" defer></script>
   </head>
   <body>
-    <header>
-      <ul>
-        <li><a href="#">dunkin'of month </a>
-        <div class="bg">
-        <div class="inner"></div>
-        </div></li>
-        <li>
-          <a href="#">brand</a>
-          <div class="bg">
-          <div class="inner">
-              <a href="#">history</a>
-              <a href="#">dd commitment</a>
-            </div>
-          </div>
-          </div>
+    <main class="main">
+    <header class="header dunkinsans">
+     <div class="header-inner">
+      <nav class="nav">
+        <div style="position: relative;">
+       <ul class="main-menu">
+        <li class="main-menu-left">
+          <ul class="main-menu-inner">
+            <li>
+              <a href="" class="block" >
+                <button class="head-btn transition-colors dunkinsans">DUNKIN’ OF SEASON</button>
+              </a>
+            </li>
+            <li class="has-sub">
+              <a href="" class="block">
+                <button class="head-btn transition-colors dunkinsans">BRAND</button>
+              </a>
+            <div class="submenu-wrap">
+<a href="#">HISTORY</a>
+ <a href="#">DD COMMITMENT</a>
+</div>
+            </li>
+            <li class="has-sub">
+              <a href="" class="block">
+                <button class="head-btn transition-colors dunkinsans">MENU</button>
+              </a>
+              <div class="submenu-wrap">
+                                        <a href="#">DONUT</a>
+                                        <a href="#">FOOD</a>
+                                        <a href="#">COFFEE</a>
+                                        <a href="#">BEVERAGE</a>
+                                        <a href="#">SNACK & MORE</a>
+                                    </div>
+            </li>
+          </ul>
         </li>
-        <li>
-          <a href="#">menu</a>
-          <div class="bg">
-          <div class="inner">
-            <a href="#">donut</a>
-            <a href="#">food</a>
-            <a href="#">coffee</a>
-            <a href="#">beverage</a>
-            <a href="#">snack & more</a>
-            </div>
-          </div>
+        <li class="main-menu-center">
+          <h1 class="center-logo">
+            <a href="" class="center-logo-a">
+              <img src="images/logo_mobile-1833920b.png" alt="dunkin" class="center-logo-img">
+            </a>
+          </h1>
         </li>
-        <li><a href="#">dunkin'</a>
-          <div class="bg">
-        <div class="inner"></div>
-      </div></li>
-
-        <li>
-          <a href="#">event</a>
-          <div class="bg">
-          <div class="inner">
-            <a href="#">프로모션</a>
-            <a href="#">제휴혜택</a>
-          </div>
-          </div>
+        <li class="main-menu-right">
+          <ul class="main-menu-inner">
+            <li class="has-sub">
+              <a href="" class="block">
+                <button class="head-btn transition-colors dunkinsans">EVNET</button>
+              </a>
+               <div class="submenu-wrap">
+                                        <a href="#">프로모션</a>
+                                        <a href="#">제휴혜택</a>
+                                    </div>
+            </li>
+            <li>
+              <a href="" class="block">
+                <button class="head-btn transition-colors dunkinsans">STORE</button>
+              </a>
+            </li>
+            <li class="has-sub">
+              <a href="" class="block">
+                <button class="head-btn transition-colors dunkinsans">ORDER</button>
+              </a>
+                <div class="submenu-wrap">
+                                        <a href="#">케이터링</a>
+                                        <a href="#">딜리버리</a>
+                                        <a href="#">선물하기</a>
+                                    </div>
+            </li>
+            <li class="toggle-li">
+              <a href="" class="toggle-a block">
+                <button id="dunkinToggle" class="peer transition" type="button" role="switch" aria-checked="false"
+                data-state="unchecked" value="on">
+                  <div class="switch-text text-kr">창업문의</div>
+                  <div class="switch-text text-en">BRAND</div>
+                  <span class="toggle-circle block relative"></span>
+                </button>
+              </a>
+            </li>
+          </ul>
         </li>
-        <li><a href="#">store</a>
-          <div class="bg">
-                    <div class="inner"></div>
-                  </div></li>
-        <li>
-          <a href="#">order</a>
-          <div class="bg">
-          <div class="inner">
-            <a href="#">케이터링</a>
-            <a href="#">딜리버리</a>
-            <a href="#">선물하기</a>
-          </div>
-          </div>
-        </li>
-         <label class="toggle">
-                          <input
-                            type="checkbox"
-                            class="toggle-input"
-                            id="mixToggle"
-                          />
-                          <span class="slider">        
-                          </span>
-                        </label>
-        <div class="inner"></div></li>
       </ul>
+        </div>
+        <div class="head-fixed flex w-full"></div>
+      </nav>
+     </div>
     </header>
-    <main>
-      <div class="box"><img src="images/mainframe.png" alt="img"></div>
-      <div class="mainfo">
-        <ul>
-          <li><img src="images/main2.png" alt="img" >
-          <p>Chestnut Filled<br><span>가을 밤 필드</span></p></li>
-          <li><img src="images/main4.png" alt="img">
-            <h3>복숭아 
-              <br>아이스티</h3>
-          </li>
-          <li>DUNKIN' OF MONTH</li>
-        </ul>
+    <div class="content">
+      <section class="sec1 section">
+        <div class="sec1-main-slider mx-auto relative">
+          <img src="images/top-frame-ad543672.png" alt="banner" class="sec1-main-slider-img absolute w-full h-full">
+          <div class="swiper"></div>
+          <div class=""></div>
+        </div>
+        <div class="sec1-main-slider-action"></div>
+      </section>
+    <section class="sec2 section">
+      <div class="section-title">
+        <h2 class="section-title-txt">DUNKIN' NEW & EVENT</h2>
+        <h3 class="section-subtitle-txt">던킨의 다양한 혜택과 이벤트 그리고 신제품</h3>
       </div>
-    </main>
-    <figure>
-      <h2>dunkin' new & event</h2>
-      <p>던킨의 다양한 혜택과 이벤트 그리고 신제품</p>
-      <div class="slide">
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-      </div>
-    </figure>
-    <section>
-      <h2>dunkin' menu</h2>
-    <span>던킨의 메뉴를 소개합니다</span>
-      <ul>
-        <li><a href="#">
-        <div class="scale"><img src="images/menu1.png" alt="menu"></div><p>donut</p></a></li>
-        <li><a href="#">
-          <div class="scale"><img src="images/menu2.png" alt="menu"></div><p>food</p></a></li>
-        <li><a href="#">
-          <div class="scale"><img src="images/menu3.png" alt="menu"></div><p>coffee</p></a></li>
-        <li><a href="#">
-          <div class="scale"><img src="images/menu4.png" alt="menu"></div><p>beverage</p></a></li>
-        <li><a href="#">
-          <div class="scale"><<img src="images/menu5.png" alt="menu"></div><p>snack & more</p></a></li>
-      </ul>
+      <div class="sec2-content"></div>
     </section>
-    <article>
-            <h2>with dunkin'</h2>
-    <span>던킨을 더 가까이에서 만나보세요</span>
-    <ul>
-      <li><a href="#">
-        <div class="img">
-          <img src="images/footer1.png" alt="img">
+    <section class="sec3 section">
+ <div class="section-title">
+        <h2 class="section-title-txt">DUNKIN' MENU</h2>
+        <h3 class="section-subtitle-txt">던킨의 메뉴를 소개합니다</h3>
+      </div>
+      <div class="sec3-content"></div>
+    </section>
+    <section class="sec4 section">
+       <div class="section-title">
+        <h2 class="section-title-txt">WITH DUNKIN'</h2>
+        <h3 class="section-subtitle-txt">던킨을 더 가까이에서 만나보세요</h3>
+      </div>
+      <div class="sec4-content relatvie mx-auto overflow-hidden">
+        <div class="sec4-wrap w-full">
+          <div class="sec4-content-wrap flex">
+            <div class="sec4-content-box">
+              <a href="" class="sec4-content-box-a overflow-hidden block">
+                <div class="sec4-content-box-img-wrap overflow-hidden">
+                  <img src="images/footer1.png" alt="" class="sec4-content-box-img w-full">
+                </div>
+                <div class="sec-content-box-text text-center">
+                  <h4 class="sec4-content-title">ORDER</h4>
+                  <h5 class="sec4-content-subtitle font-bold">쉽고 빠르게 만나는 던킨</h5>
+                </div>
+              </a>
+            </div>
+            <div class="sec4-content-box">
+              <a href="" class="sec4-content-box-a overflow-hidden block">
+                <div class="sec4-content-box-img-wrap overflow-hidden">
+                  <img src="images/footer2.png" alt="" class="sec4-content-box-img w-full">
+                </div>
+                <div class="sec-content-box-text text-center">
+                  <h4 class="sec4-content-title">STORE</h4>
+                  <h5 class="sec4-content-subtitle font-bold">나와 가장 가까운 던킨 찾기</h5>
+                </div>
+              </a>
+            </div>
+            <div class="sec4-content-box">
+              <a href="" class="sec4-content-box-a overflow-hidden block">
+                <div class="sec4-content-box-img-wrap overflow-hidden">
+                  <img src="images/footer3.png" alt="" class="sec4-content-box-img w-full">
+                </div>
+                <div class="sec-content-box-text text-center">
+                  <h4 class="sec4-content-title">BRAND</h4>
+                  <h5 class="sec4-content-subtitle font-bold">던킨이 전하고 싶은 이야기</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+    </div>
+    </div>
+  </section>
+    </div>
+    <footer class="footer pretendard">
+      <div class="footer-inner mx-auto relative">
+      <div class="footer-inner-row1 flex">
+        <div class="footer-row1-left pretendard">
+          <div class="footer-row1-left-top flex">
+            <img src="images/logo-11ac097b.svg" alt="DUNKIN" class="footer-row1-left-top-img">
+          </div>
+          <div class="footer-row1-left-bottom flex">
+            <div class="w-full">서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</div>
+            <div class="footer-detail w-full flex">
+              <div>사업자 등록번호 : 303-81-09535</div>
+              <div>비알코리아(주) 대표이사 도세호</div>
+            </div>
+            <div class="footer-detail2 footer-detail w-full flex">
+              <div>TEL : 080-555-3131</div>
+              <div>개인정보관리책임자 : 심수연</div>
+            </div>
+            <div class="w-full">COPYRIGHT Ⓒ 2024 BRKOREA COMPANY. ALL RIGHTS RESERVED.</div>
+          </div>
         </div>
-        <div class="caption">
-        <p><h3>order</h3>쉽고 빠르게 만나는 던킨</p>
-        </div></a></li>
-      <li><a href="#">
-        <div class="img">
-            <img src="images/footer2.png" alt="img">
-        </div>
-          <div class="caption">
-        <p><h3>store</h3>나와 가장 가까운 던킨 찾기</p>
-      </div></a></li>
-      <li><a href="#">
-        <div class="img">
-            <img src="images/footer3.png" alt="img">
-        </div>
-          <div class="caption">
-        <p><h3>brand</h3>던킨이 전하고 싶은 이야기</p>
-      </div></a></li>
-    </ul>
-    </article>
-    <footer>
-      <div class="wrap">
-        <div class="left">
-        <div class="logo">
-          <img src="images/logo-11ac097b.svg" alt="logo">
-        </div>
-        <div class="copy">
-          <p>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</p>
-        <p>사업자 등록번호 : 303-81-09535<span>
-          비알코리아(주) 대표이사 도세호</span></p>
-        <p>TEL : 080-555-3131
-          <span>개인정보관리책임자 : 심수연</span></p>
-          <p>COPYRIGHT Ⓒ 2024 BRKOREA COMPANY. ALL RIGHTS RESERVED.</p>
-        </div>
-        <div class="login">
-          <a href="#">로그인</a>
-          <a href="#">회원가입</a>
-          <a href="#">고객센터</a>
+        <div class="footer-row1-right hidden">
+          <ul class="flex justify-between">
+            <li>
+              <ul class="font12 text-right">
+                <li class="footer-title dunkinsans">
+                  <a href="" class="block">BRAND</a>
+                </li>
+                <li>
+                  <a href="" class="block footer-detail-text">HISTORY</a>
+                </li>
+                <li>
+                  <a href="" class="block footer-detail-text">DD COMMITMENT</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="font12 text-right">
+                <li class="footer-title dunkinsans">
+                  <a href="" class="block">MENU</a>
+                </li>
+                <li>
+                  <a href="" class="block footer-detail-text">DONUT</a>
+                </li>
+                <li>
+                  <a href="" class="block footer-detail-text">FOOD</a>
+                </li>
+                <li>
+                  <a href="" class="block footer-detail-text">COFFEE</a>
+                </li>
+                <li>
+                  <a href="" class="block footer-detail-text">BEVERAGE</a>
+                </li>
+                <li>
+                  <a href="" class="block footer-detail-text">SNACK & MORE</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="font12 text-right">
+                <li class="footer-title dunkinsans">
+                  <a href="" class="block">EVENT</a>
+                </li>
+                <li>
+                  <a href="" class="block footer-detail-text">프로모션</a>
+                </li>
+                <li>
+                  <a href="" class="block footer-detail-text">제휴혜택</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="font12 text-right">
+                <li class="footer-title dunkinsans">
+                  <a href="" class="block">STORE</a>
+                </li>
+                <li>
+                  <a href="" class="block footer-detail-text">매장 찾기</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="font12 text-right">
+                <li class="footer-title dunkinsans">
+                  <a href="" class="block">ORDER</a>
+                </li>
+                <li>
+                  <a href="" class="block footer-detail-text">케이터링</a>
+                </li>
+                <li>
+                  <a href="" class="block footer-detail-text">딜리버리</a>
+                </li>
+                <li>
+                  <a href="" class="block footer-detail-text">선물하기</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="right">
-        <ul>
-      <li><a href="#">brand</a>
-
-      <div>
-        <a href="#">history</a>
-        <a href="#">dd commitment</a>
-      </div>
-        </li>
-
-        <li><a href="#">menu</a>
-          <div>
-            <a href="#">donut</a>
-            <a href="#">food</a>
-            <a href="#">coffee</a>
-            <a href="#">beverage</a>
-            <a href="#">snack & more</a>
-            </div>
-        </li>
-
-        <li><a href="#">event</a>
-          <div>
-            <a href="#">프로모션</a>
-            <a href="#">제휴혜택</a>
-          </div>
-        </li>
-
-        <li><a href="#">store</a>
-            <div>
-              <a href="#">매장찾기</a>
-            </div>
-        </li>
-          
-      <li><a href="#">order</a>
-          <div>
-            <a href="#">케이터링</a>
-            <a href="#">딜리버리</a>
-            <a href="#">선물하기</a>
-          </div>
-          </li>
+      <div class="footer-inner-row2 flex">
+        <div class="footer-inner-row2-left flex">
+          <a href="" class="login active">로그인</a>
+          <a href="" class="login no-active">회원가입</a>
+          <a href="" class="login no-active">고객센터</a>
+        </div>
+        <ul class="footer-inner-row2-right flex">
+          <li><a href="https://dunkinhub.co.kr">
+            <img src="images/sns_hub-6672600f.svg" alt="던킨허브">
+          </a></li>
+          <li><a href="https://www.instagram.com/dunkin_kr">
+            <img src="images/sns_instagram-2b751388.svg" alt="던킨인스타그램">
+          </a></li>
+          <li><a href="https://www.youtube.com/@DunkinDonutsKorea">
+            <img src="images/sns_youtube-c3ae2245.svg" alt="던킨유튜브">
+          </a></li>
+          <li><a href="https://blog.naver.com/dunkin_kr">
+            <img src="images/sns_blog-541a6e04.svg" alt="던킨블로그">
+          </a></li>
         </ul>
       </div>
-        <div class="sns2"></div>
-        <a href="#"><img src="images/sns_hub-6672600f.svg" alt="img"></a>
-        <a href="#"></a>
-      </ul>
+      <div class="footer-inner-row3 flex">
+        <div class="footer-inner-row3-left flex">
+          <div class="relative w-full">
+            <ul class="familysite transition-height"></ul>
+            <a href="" role="button" class="button-outline flex w-full relatvie font-bold">
+              FAMILY SITE
+              <img src="images/arrow-up-e7446570.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="footer-inner-row3-right">
+          <ul class="rule flex">
+            <li><a href="">공정거래자율준수</a></li>
+            <li><a href="">윤리신고센터</a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="" class="text-destructive font-bold">개인정보처리방침</a></li>
+            <li><a href="">영상정보처리기기운영관리방침</a></li>
+            <li><a href="">안전보건경영방침</a></li>
+            <li><a href="">이메일무단수집거부</a></li>
+            <li><a href="">거래희망회사 사전등록</a></li>
+            <li><a href="">채용안내</a></li>
+          </ul>
+        </div>
+        <div class="footer-inner-row3-hidden hidden"></div>
       </div>
-      <div class="fam"></div>
+      </div>
     </footer>
+    <div class="floating">
+      <div class="floating-top text-center">
+        <a href="" class="floating-top-btn w-full relatvie block">
+          <img src="images/search_white-939e6c46.svg" alt="제품찾기" class="floating-top-img mx-auto">
+          <div class="floating-txt font-bold">제품찾기</div>
+        </a>
+        <a href="" class="floating-top-btn w-full relatvie block">
+          <img src="images/floating_franchise-60965c73.svg" alt="창업문의" class="floating-top-img mx-auto">
+          <div class="floating-txt font-bold">창업문의</div>
+        </a>
+        <a href="" class="floating-top-btn w-full relatvie block">
+          <img src="images/floating_nutrition-45dfde2a.svg" alt="영양정보" class="floating-top-img mx-auto">
+          <div class="floating-txt font-bold">영양정보</div>
+        </a>
+      </div>
+     <a role="button" class="floating-bottom-btn w-full flex">
+      <img src="images/go_to_top_arrow-e5b0e3d3.svg" alt="맨 위로" class="go-to-top-img">
+     </a>
+    </div>
+    </main>
   </body>
 </html>
