@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="fonts/web/static/pretendard.css">
     <link rel="stylesheet" href="fonts/web/static/pretendard-subset.css">
     <link rel="stylesheet" href="fonts/web/variable/pretendardvariable.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/jquery-1.12.3.js"></script>
     <script src="index.js" defer></script>
   </head>
@@ -27,12 +29,12 @@
           <ul class="main-menu-inner">
             <li>
               <a href="" class="block" >
-                <button class="head-btn transition-colors dunkinsans">DUNKIN’ OF SEASON</button>
+                <button class="head-btn transition-colors" style="word-spacing: -6px;">DUNKIN’ OF SEASON</button>
               </a>
             </li>
             <li class="has-sub">
               <a href="" class="block">
-                <button class="head-btn transition-colors dunkinsans">BRAND</button>
+                <button class="head-btn transition-colors">BRAND</button>
               </a>
             <div class="submenu-wrap">
 <a href="#">HISTORY</a>
@@ -41,14 +43,14 @@
             </li>
             <li class="has-sub">
               <a href="" class="block">
-                <button class="head-btn transition-colors dunkinsans">MENU</button>
+                <button class="head-btn transition-colors">MENU</button>
               </a>
               <div class="submenu-wrap">
                                         <a href="#">DONUT</a>
                                         <a href="#">FOOD</a>
                                         <a href="#">COFFEE</a>
                                         <a href="#">BEVERAGE</a>
-                                        <a href="#">SNACK & MORE</a>
+                                        <a href="#">SNACK &amp; MORE</a>
                                     </div>
             </li>
           </ul>
@@ -64,7 +66,7 @@
           <ul class="main-menu-inner">
             <li class="has-sub">
               <a href="" class="block">
-                <button class="head-btn transition-colors dunkinsans">EVNET</button>
+                <button class="head-btn transition-colors">EVNET</button>
               </a>
                <div class="submenu-wrap">
                                         <a href="#">프로모션</a>
@@ -73,12 +75,12 @@
             </li>
             <li>
               <a href="" class="block">
-                <button class="head-btn transition-colors dunkinsans">STORE</button>
+                <button class="head-btn transition-colors">STORE</button>
               </a>
             </li>
             <li class="has-sub">
               <a href="" class="block">
-                <button class="head-btn transition-colors dunkinsans">ORDER</button>
+                <button class="head-btn transition-colors">ORDER</button>
               </a>
                 <div class="submenu-wrap">
                                         <a href="#">케이터링</a>
@@ -105,34 +107,289 @@
      </div>
     </header>
     <div class="content">
-      <section class="sec1 section">
-        <div class="sec1-main-slider mx-auto relative">
-          <img src="images/top-frame-ad543672.png" alt="banner" class="sec1-main-slider-img absolute w-full h-full">
-          <div class="swiper"></div>
-          <div class=""></div>
+      <section class="sec1 section relative overflow-hidden">
+        <div class="sec1-main-swiper mx-auto relative">
+          <img src="images/top-frame-ad543672.png" alt="banner" class="main-swiper-frame absolute w-full h-full">
+          <div class="main-swiper swiper w-full h-full overflow-hidden">
+            <div class="swiper-wrapper flex w-full">
+              <div class="swiper-slide main-swiper-wrap relative block w-full h-full">
+                <img src="images/main-slide1.jpg" alt="메인슬라이드1" class="main-swiper-img w-full h-full">
+            </div>
+            <div class="swiper-slide main-swiper-wrap relative block w-full h-full">
+                <img src="images/main-slide2.jpg" alt="메인슬라이드2" class="main-swiper-img w-full h-full">
+            </div>
+          </div>
+          </div>
+          <div class="main-swiper-pagination swiper-pagination absolute">
+          </div>
         </div>
-        <div class="sec1-main-slider-action"></div>
+        <div class="sec1-swiper-action w-full h-full">
+          <div class="sec1-swiper-action-position flex mx-auto h-full">
+            <div class="sec1-swiper-action-wrap flex">
+              <div class="sec1-swiper-action-top swiper flex relative overflow-hidden">
+                  <div class="swiper-wrapper flex h-full">
+                    <div class="swiper-slide swiper-action-top-wrap block w-full h-full">
+                      <img src="images/top-swiper-1.png" alt="탑슬라이드" class="swiper-action-top-img mx-auto">
+                      <div class="swiper-action-top-txt">
+                        <div class="swiper-action-top-txt-eng">
+                          <p>
+                            <span style="color: rgb(236, 171, 19); font-size: 12px;">
+                              BIG BERRY CREAMCHEESE DUAL FILLED
+                            </span>
+                          </p>
+                        </div>
+                        <div class="swiper-action-top-txt-kor">
+                          <p>
+                            <span style="color: rgb(65, 28, 1); font-size: 18px;">
+                              빅 베리 크림치즈 듀얼필드
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide swiper-action-top-wrap block w-full h-full">
+                      <img src="images/top-swiper-2.png" alt="탑슬라이드" class="swiper-action-top-img mx-auto">
+                       <div class="swiper-action-top-txt">
+                        <div class="swiper-action-top-txt-eng">
+                          <p>
+                            <span style="color: rgb(236, 171, 19); font-size: 12px;">
+                              BERRY STRAWBERRY
+                            </span>
+                          </p>
+                        </div>
+                        <div class="swiper-action-top-txt-kor">
+                          <p>
+                            <span style="color: rgb(65, 28, 1); font-size: 18px;">
+                              베리 스트로베리
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide swiper-action-top-wrap block w-full h-full">
+                      <img src="images/top-swiper-3.png" alt="탑슬라이드" class="swiper-action-top-img mx-auto">
+                       <div class="swiper-action-top-txt">
+                        <div class="swiper-action-top-txt-eng">
+                          <p>
+                            <span style="color: rgb(236, 171, 19); font-size: 12px;">
+                              BERRY IN LOVE
+                            </span>
+                          </p>
+                        </div>
+                        <div class="swiper-action-top-txt-kor">
+                          <p>
+                            <span style="color: rgb(65, 28, 1); font-size: 18px;">
+                              베리 인 러브
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide swiper-action-top-wrap block w-full h-full">
+                      <img src="images/top-swiper-4.png" alt="탑슬라이드" class="swiper-action-top-img mx-auto">
+                       <div class="swiper-action-top-txt">
+                        <div class="swiper-action-top-txt-eng">
+                          <p>
+                            <span style="color: rgb(236, 171, 19); font-size: 12px;">
+                              Blueberry Cream Cheese Donut
+                            </span>
+                          </p>
+                        </div>
+                        <div class="swiper-action-top-txt-kor">
+                          <p>
+                            <span style="color: rgb(65, 28, 1); font-size: 18px;">
+                              블루베리 크림치즈 도넛
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide swiper-action-top-wrap block w-full h-full">
+                      <img src="images/top-swiper-5.png" alt="탑슬라이드" class="swiper-action-top-img mx-auto">
+                       <div class="swiper-action-top-txt">
+                        <div class="swiper-action-top-txt-eng">
+                          <p>
+                            <span style="color: rgb(236, 171, 19); font-size: 12px;">
+                              Strawberry Raspberry Glazed
+                            </span>
+                          </p>
+                        </div>
+                        <div class="swiper-action-top-txt-kor">
+                          <p>
+                            <span style="color: rgb(65, 28, 1); font-size: 18px;">
+                              설향딸기 라즈베리 글레이즈드
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide swiper-action-top-wrap block w-full h-full">
+                      <img src="images/top-swiper-6.png" alt="탑슬라이드" class="swiper-action-top-img mx-auto">
+                       <div class="swiper-action-top-txt">
+                        <div class="swiper-action-top-txt-eng">
+                          <p>
+                            <span style="color: rgb(236, 171, 19); font-size: 12px;">
+                                Strawberry Condensed Milk Cream Donut
+                            </span>
+                          </p>
+                        </div>
+                        <div class="swiper-action-top-txt-kor">
+                          <p>
+                            <span style="color: rgb(65, 28, 1); font-size: 18px;">
+                              설향딸기 연유크림 도넛
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide swiper-action-top-wrap block w-full h-full">
+                      <img src="images/top-swiper-7.png" alt="탑슬라이드" class="swiper-action-top-img mx-auto">
+                       <div class="swiper-action-top-txt">
+                        <div class="swiper-action-top-txt-eng">
+                          <p>
+                            <span style="color: rgb(236, 171, 19); font-size: 12px;">
+                              Roast Coconut Donut
+                            </span>
+                          </p>
+                        </div>
+                        <div class="swiper-action-top-txt-kor">
+                          <p>
+                            <span style="color: rgb(65, 28, 1); font-size: 18px;">
+                              로스트 코코넛 크림
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 <div class="swiper-action-top-pagination swiper-pagination absolute"></div>
+              </div>
+              <div class="sec1-swiper-action-bottom">
+                <div class="swiper-btm swiper relative overflow-hidden">
+                  <div class="swiper-wrapper flex">
+                    <div class="swiper-slide swiper-btm-wrap w-full flex">
+                      <div class="swiper-btm-txt-wrap relative">
+                        <div class="swiper-btm-txt">
+                          <p>
+                            <span style="color: rgb(66,0,14); "">
+                              아사이베리 요거트<br>쿨라타
+                            </span>
+                          </p>
+                        </div>
+                      </div>
+                      <img src="images/drink1.png" alt="슬라이드아래" class="swiper-btm-img">
+                    </div>
+                    <div class="swiper-slide swiper-btm-wrap w-full flex">
+                      <div class="swiper-btm-txt-wrap relative">
+                         <div class="swiper-btm-txt">
+                           <p>
+                            <span style="color: rgb(66,0,14); ">
+                              생딸기 우유크림<br>라떼                            </span>
+                          </p>
+                         </div>
+                      </div>
+                      <img src="images/drink2.png" alt="슬라이드아래" class="swiper-btm-img">
+                    </div>
+                  </div>
+                  <div class="swiper-btm-pagination swiper-pagination flex absolute"></div>
+                </div>
+                <a href="" class="main-banner flex">DUNKIN’ OF SEASON
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19" fill="none"><path d="M2 16.5L9 9.5L2 2.5" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     <section class="sec2 section">
       <div class="section-title">
-        <h2 class="section-title-txt">DUNKIN' NEW & EVENT</h2>
+        <h2 class="section-title-txt">DUNKIN' NEW &amp; EVENT</h2>
         <h3 class="section-subtitle-txt">던킨의 다양한 혜택과 이벤트 그리고 신제품</h3>
       </div>
-      <div class="sec2-content"></div>
+      <div class="sec2-content mx-auto relative">
+        <div class="bg-gradient-to-r bg-gradient absolute h-full"></div>
+        <div class="bg-gradient-to-l bg-gradient absolute h-full"></div>
+        <div class="sec2-swiper swiper overflow-hidden">
+          <div class="swiper-wrapper flex">
+            <div class="sec2-swiper-slide swiper-slide w-full block">
+              <img src="images/slide1.jpg" alt="슬라이드이미지" class="sec2-swiper-slide-img w-full">
+            </div>
+            <div class="sec2-swiper-slide swiper-slide w-full block">
+              <img src="images/slide2.jpg" alt="슬라이드이미지" class="sec2-swiper-slide-img w-full">
+            </div>
+            <div class="sec2-swiper-slide swiper-slide w-full block">
+              <img src="images/slide3.png" alt="슬라이드이미지" class="sec2-swiper-slide-img w-full">
+            </div>
+            <div class="sec2-swiper-slide swiper-slide w-full block">
+              <img src="images/slide4.jpg" alt="슬라이드이미지" class="sec2-swiper-slide-img w-full">
+            </div>
+            <div class="sec2-swiper-slide swiper-slide w-full block">
+              <img src="images/slide5.jpg" alt="슬라이드이미지" class="sec2-swiper-slide-img w-full">
+            </div>
+          </div>
+        </div>
+        <div class="sec2-swiper-pagination swiper-pagination">
+      </div>
     </section>
     <section class="sec3 section">
- <div class="section-title">
+       <div class="section-title">
         <h2 class="section-title-txt">DUNKIN' MENU</h2>
         <h3 class="section-subtitle-txt">던킨의 메뉴를 소개합니다</h3>
       </div>
-      <div class="sec3-content"></div>
+      <div class="sec3-content relative mx-auto overflow-hidden">
+        <div class="sec3-swiper swiper">
+          <div class="swiper-wrapper sec3-swiper-wrapper flex">
+            <div class="sec3-swiper-slide swiper-slide">
+              <a href="" class="sec3-swiper-slide-wrap block">
+                <div class="sec3-swiper-slide-img-wrap" style="background-color: rgb(250,218,177);">
+                  <img src="images/menu1.png" alt="menu" class="sec3-swiper-slide-img w-full">
+                </div>
+                <h4 class="sec3-swiper-slide-txt">DONUT</h4>
+              </a>
+            </div>
+            <div class="sec3-swiper-slide swiper-slide">
+              <a href="" class="sec3-swiper-slide-wrap block">
+                <div class="sec3-swiper-slide-img-wrap" style="background-color: rgb(255, 234, 187)">
+                  <img src="images/menu2.png" alt="menu" class="sec3-swiper-slide-img w-full">
+                </div>
+                <h4 class="sec3-swiper-slide-txt">FOOD</h4>
+              </a>
+            </div>
+            <div class="sec3-swiper-slide swiper-slide">
+              <a href="" class="sec3-swiper-slide-wrap block">
+                <div class="sec3-swiper-slide-img-wrap" style="background-color: rgb(255, 228, 240);">
+                  <img src="images/menu3.png" alt="menu" class="sec3-swiper-slide-img w-full">
+                </div>
+                <h4 class="sec3-swiper-slide-txt">COFFEE</h4>
+              </a>
+            </div>
+            <div class="sec3-swiper-slide swiper-slide">
+              <a href="" class="sec3-swiper-slide-wrap block">
+                <div class="sec3-swiper-slide-img-wrap" style="background-color: rgb(225, 243, 249)">
+                  <img src="images/menu4.png" alt="menu" class="sec3-swiper-slide-img w-full">
+                </div>
+                <h4 class="sec3-swiper-slide-txt">BEVERAGE</h4>
+              </a>
+            </div>
+            <div class="sec3-swiper-slide swiper-slide">
+              <a href="" class="sec3-swiper-slide-wrap block">
+                <div class="sec3-swiper-slide-img-wrap" style="background-color: rgb(236, 249, 239);">
+                  <img src="images/menu5.png" alt="menu" class="sec3-swiper-slide-img w-full">
+                </div>
+                <h4 class="sec3-swiper-slide-txt">SNACK &amp; MORE</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="sec3-swiper-pagination swiper-pagination"></div>
+      </div>
     </section>
     <section class="sec4 section">
        <div class="section-title">
         <h2 class="section-title-txt">WITH DUNKIN'</h2>
         <h3 class="section-subtitle-txt">던킨을 더 가까이에서 만나보세요</h3>
       </div>
-      <div class="sec4-content relatvie mx-auto overflow-hidden">
+      <div class="sec4-content relative mx-auto overflow-hidden">
         <div class="sec4-wrap w-full">
           <div class="sec4-content-wrap flex">
             <div class="sec4-content-box">
@@ -226,7 +483,7 @@
                   <a href="" class="block footer-detail-text">BEVERAGE</a>
                 </li>
                 <li>
-                  <a href="" class="block footer-detail-text">SNACK & MORE</a>
+                  <a href="" class="block footer-detail-text">SNACK &amp; MORE</a>
                 </li>
               </ul>
             </li>
@@ -296,10 +553,17 @@
       <div class="footer-inner-row3 flex">
         <div class="footer-inner-row3-left flex">
           <div class="relative w-full">
-            <ul class="familysite transition-height"></ul>
-            <a href="" role="button" class="button-outline flex w-full relatvie font-bold">
+            <ul class="familysite transition-height">
+              <li><a href="" class="familysite-a block transition-colors">SPC그룹</a></li>
+              <li><a href="" class="familysite-a block transition-colors">배스킨라빈스</a></li>
+              <li><a href="" class="familysite-a block transition-colors">파리바게뜨</a></li>
+              <li><a href="" class="familysite-a block transition-colors">파스쿠찌</a></li>
+              <li><a href="" class="familysite-a block transition-colors">해피포인트 카드</a></li>
+              <li><a href="" class="familysite-a block transition-colors">던킨 아르바이트</a></li>
+            </ul>
+            <a role="button" class="familysite-btn flex w-full relative font-bold">
               FAMILY SITE
-              <img src="images/arrow-up-e7446570.svg" alt="">
+              <img src="images/arrow-up-e7446570.svg" alt="familysite-arrow" class="familysite-arrow transition-transform">
             </a>
           </div>
         </div>
@@ -322,15 +586,15 @@
     </footer>
     <div class="floating">
       <div class="floating-top text-center">
-        <a href="" class="floating-top-btn w-full relatvie block">
+        <a href="" class="floating-top-btn w-full relative block">
           <img src="images/search_white-939e6c46.svg" alt="제품찾기" class="floating-top-img mx-auto">
           <div class="floating-txt font-bold">제품찾기</div>
         </a>
-        <a href="" class="floating-top-btn w-full relatvie block">
+        <a href="" class="floating-top-btn w-full relative block">
           <img src="images/floating_franchise-60965c73.svg" alt="창업문의" class="floating-top-img mx-auto">
           <div class="floating-txt font-bold">창업문의</div>
         </a>
-        <a href="" class="floating-top-btn w-full relatvie block">
+        <a href="" class="floating-top-btn w-full relative block">
           <img src="images/floating_nutrition-45dfde2a.svg" alt="영양정보" class="floating-top-img mx-auto">
           <div class="floating-txt font-bold">영양정보</div>
         </a>
