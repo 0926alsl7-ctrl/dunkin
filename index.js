@@ -97,12 +97,19 @@ document.addEventListener('DOMContentLoaded', function() {
     },
 
     breakpoints: {
-       768: {
+      976: {
+        centeredSlides: false,
         slidesPerView: 'auto',
       },
-      976: {
+       768: {
+        centeredSlides: true,
+        slidesPerView: 'auto',
+      },
+      0:{
+        centeredSlides: true,
         slidesPerView: 'auto',
       }
+
     }
   });
 });
