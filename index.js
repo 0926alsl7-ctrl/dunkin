@@ -73,10 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     breakpoints: {
       768: {
-        slidesPerView: 1.5,
-      },
-      1024: {
-        slidesPerView: 'auto', 
+        slidesPerView: 'auto',
       }
     }
   });
@@ -84,29 +81,58 @@ document.addEventListener('DOMContentLoaded', function() {
 // section (3) -swiper
 document.addEventListener('DOMContentLoaded', function() {
   const sec3Swiper = new Swiper('.sec3-swiper', {
-    slidesPerView: 'auto',
-    slidesPerGroup: 2, 
-    
-    spaceBetween: 0, 
-
-    speed: 1000,
     loop: false,
+    speed: 1000,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    spaceBetween: 0, 
+        autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
 
     pagination: {
       el: '.sec3-swiper-pagination',
       clickable: true,
     },
 
-    observer: true,
-    observeParents: true,
-
     breakpoints: {
+       768: {
+        slidesPerView: 'auto',
+      },
       976: {
-        slidesPerGroup: 2, 
+        slidesPerView: 'auto',
       }
     }
   });
 });
+// section (4) - swiper
+document.addEventListener('DOMContentLoaded', function() {
+  const sec4Swiper = new Swiper('.sec4-swiper', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    loop: false,
+    speed: 700,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.sec4-swiper-pagination',
+      clickable: true,
+    },
+
+    breakpoints: {
+      768: {
+        enabled: false, 
+      },
+      0: {
+        enabled: true, 
+      }
+    }
+  });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const familyBtn = document.querySelector('.familysite-btn');
     const familyList = document.querySelector('.familysite');
@@ -115,10 +141,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (familyBtn) {
         familyBtn.addEventListener('click', function(e) {
             e.preventDefault();
-            // active 클래스를 토글 (넣었다 뺐다)
             familyList.classList.toggle('active');
             
-            // 화살표 회전 효과
             if (familyList.classList.contains('active')) {
                 familyArrow.style.transform = 'rotateX(0deg)';
             } else {
@@ -127,11 +151,48 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // 바깥 영역 클릭하면 닫히게 (디테일!)
     document.addEventListener('click', function(e) {
         if (!familyBtn.contains(e.target) && !familyList.contains(e.target)) {
             familyList.classList.remove('active');
             familyArrow.style.transform = 'rotateX(180deg)';
         }
     });
+});
+
+// mobile
+const mobileMenuOpen = document.querySelector(".mob-menu-open")
+
+if(mobileMenuOpen){
+  mobileMenuOpen.addEventListener('click',function(e){
+    e.preventDefault();
+    mobileMenuOpen.classList.toggle('active');
+  })
+}
+
+const mobMenuContents = document.querySelectorAll('.mob-menu-content');
+
+mobMenuContents.forEach(content => {
+  const menuTxt = content.querySelector('.mob-menu-txt');
+  const submenu = content.querySelector('.mob-submenu');
+  const arrow = content.querySelector('.mob-submenu-open');
+
+  if (submenu && menuTxt) {
+    menuTxt.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const isOpen = content.classList.contains('active');
+      mobMenuContents.forEach(item => {
+        item.classList.remove('active');
+        const sub = item.querySelector('.mob-submenu');
+        if(sub) sub.style.maxHeight = null;
+      });
+      
+
+      if (!isOpen) {
+        content.classList.add('active');
+      } else {
+        content.classList.remove('active');
+      }
+    });
+  }
 });
