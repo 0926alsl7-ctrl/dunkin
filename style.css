@@ -1,20 +1,23 @@
 @font-face {
     font-family: 'DunkinSans';
-    src: url('../fonts/Dunkin Sans.otf') format('opentype');
+    src: url('fonts/Dunkin\ Sans.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'DunkinBold';
-    src: url('../fonts/Dunkin Bold.otf') format('opentype');
+    src: url('fonts/Dunkin\ Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Dunkin';
-    src: url('../fonts/Dunkin.otf') format('opentype');
+    src: url('fonts/Dunkin.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 * {
@@ -25,8 +28,10 @@
 html{
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color:transparent;
+   text-rendering: optimizeLegibility;
 }
 body {
+  word-break: keep-all;
   word-spacing: -4px;
   background: #fff;
   line-height: inherit;
