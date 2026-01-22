@@ -1377,7 +1377,7 @@ background: #3d332e !important;
 .floating{
   position: fixed;
   width: clamp(55px,4.98vw,73px);
-  z-index: 10;
+  z-index: 40;
   right: clamp(16px,2.73vw,40px);
   bottom: clamp(16px,2.73vw,40px);
 }
